@@ -1,7 +1,4 @@
 eureka:
-  client:
-    service-url :
-      default-Zone : http://localhost:8762/eureka/
   instance:
     hostname : order
     # 是否显示ip,如果不设置那么就会显示主机名，默认false
