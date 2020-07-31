@@ -1,31 +1,21 @@
 spring:
   application:
-    name: order123
+    name: config
+    #引入一个git的仓库
   cloud:
     config:
-      discovery:
-        enabled: true
-        service-id: CONFIG
-      profile: test
-    stream:
-      bindings:
-        myMessage:
-          group: order
-          content-type: application/json
-  zipkin:
-    base-url: http://zipkin:9411/
-    sender:
-      type: web
-  sleuth:
-    sampler:
-      probability: 1
+      server:
+        git:
+          uri: https://github.com/davidway/config-repo.git
+          username: 249261450@qq.com
+          password: zhuweiqiaing1130
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/
-  instance:
-    prefer-ip-address: true
+      defaultZone : http://localhost:8761/eureka
 
-logging:
-  level:
-    org.springframework.cloud.openfeign: debug
+server:
+  port: 8099
+#提交环境
+env:
+  dev
