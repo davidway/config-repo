@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config
+    #引入一个git的仓库
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/davidway/config-repo.git
+          username: 249261450@qq.com
+          password: zhuweiqiaing1130
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:8761/eureka
+
+server:
+  port: 8099
+
+env:
+  test
