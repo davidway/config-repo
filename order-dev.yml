@@ -23,4 +23,4 @@ PRODUCT:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 
 env:
-  test
+  hehe
