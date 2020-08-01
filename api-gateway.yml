@@ -1,13 +1,13 @@
-zuul:
-  routes:
-    # /myProejct/project/list->product/product/list
-    #product: /myProduct/** 简洁写法
-    ignored-patterns:
-      - /**/product/listForOrder
-#      - /product/product/listForOrder
-#      - /myProduct/product/listForOrder
-    myproduct:
-        path: /myProduct/**
-        serviceId: product
-        #获取cookie
-        sensitiveHeaders:
+# zuul:
+#   routes:
+#     # /myProejct/project/list->product/product/list
+#     #product: /myProduct/** 简洁写法
+#     ignored-patterns:
+#       - /**/product/listForOrder
+# #      - /product/product/listForOrder
+# #      - /myProduct/product/listForOrder
+#     myproduct:
+#         path: /myProduct/**
+#         serviceId: product
+#         #获取cookie
+#         sensitiveHeaders:
